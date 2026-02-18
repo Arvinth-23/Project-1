@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guide Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎓 Career Guide Chatbot</h1>
+            <p>Get personalized career advice powered by AI</p>
+        </header>
+        <div class="main-content">
+            <aside class="sidebar">
+                <h3>Quick Topics</h3>
+                <div class="quick-buttons">
+                    <button class="quick-btn" data-topic="ai">🤖 AI Careers</button>
+                    <button class="quick-btn" data-topic="programming">💻 Programming</button>
+                    <button class="quick-btn" data-topic="learning">📚 Learning Path</button>
+                    <button class="quick-btn" data-topic="skills">⚡ Skills</button>
+                    <button class="quick-btn" data-topic="salary">💰 Salary</button>
+                    <button class="quick-btn" data-topic="internships">🏢 Internships</button>
+                </div>
+                <div class="session-info">
+                    <p id="sessionDisplay">Session: New</p>
+                    <button id="clearBtn" class="clear-btn">🔄 New Chat</button>
+                </div>
+            </aside>
+            <div class="chat-section">
+                <div class="chat-messages" id="messages">
+                    <div class="welcome-message">
+                        <h2>Welcome! 👋</h2>
+                        <p>I'm your AI career advisor. Click a quick topic or ask me anything about careers!</p>
+                    </div>
+                </div>
+                <div class="chat-input-section">
+                    <form id="chatForm" class="chat-form">
+                        <div class="input-wrapper">
+                            <input type="text" id="userInput" class="user-input" placeholder="Ask about careers, skills, learning paths..." autofocus required>
+                            <button type="submit" class="send-btn"><span>Send</span><span class="icon">➤</span></button>
+                        </div>
+                        <div class="input-tips">
+                            <small>💡 Try: "Best AI careers", "How to learn Python", "Data science skills"</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loadingIndicator" class="loading-indicator hidden">
+        <div class="spinner"></div>
+        <p>Thinking...</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
